@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className='App'>
       <Header />
-      <h1>App worked</h1>
+      <h1>App worked with CI/CD</h1>
       <Footer />
     </div>
   );
