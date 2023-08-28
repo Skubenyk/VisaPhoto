@@ -1,0 +1,71 @@
+//!Home
+
+@import './../../styles/normolize.scss';
+@import './../../styles/fonts.scss';
+@import './../../styles/variables.scss';
+@import './../../styles/main.scss';
+
+.home {
+  justify-content: center;
+  display: flex;
+
+  button {
+    padding: 20px 60px;
+  }
+}
+
+.wrapper {
+  justify-content: space-between;
+  padding: 30px;
+  display: flex;
+  width: 1200px;
+  height: 100%;
+}
+
+.content {
+  margin-right: 15px;
+  padding: 10px;
+  width: 450px;
+  width: 400px;
+}
+
+.title {
+  margin-bottom: 40px;
+  line-height: 45px;
+  font-size: $fs-1;
+}
+
+.text {
+  margin-bottom: 30px;
+  line-height: 35px;
+  font-size: $fs-2;
+  font-weight: 600;
+}
+
+.button {
+  margin-bottom: 50px;
+}
+
+.wrapperNumber {
+  padding: 15px 15px 15px 0;
+  display: flex;
+}
+
+.numberId,
+.numberGuarantee {
+  padding: 20px 20px 20px 0;
+  font-size: $fs-number;
+  margin-bottom: 10px;
+  color: $c-yellow;
+  font-weight: 900;
+}
+
+.textId,
+.textGuarantee {
+  line-height: 23px;
+  font-size: $fs-4;
+}
+
+.photo {
+  margin-left: 15px;
+}

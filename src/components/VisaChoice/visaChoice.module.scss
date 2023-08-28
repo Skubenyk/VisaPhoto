@@ -1,0 +1,54 @@
+//!Visa choice
+
+@import './../../styles/normolize.scss';
+@import './../../styles/fonts.scss';
+@import './../../styles/variables.scss';
+@import './../../styles/main.scss';
+
+.visaChoice {
+  a {
+    color: $c-black;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 30px;
+  width: 1200px;
+  height: 100%;
+}
+
+.content {
+  justify-content: space-around;
+  display: flex;
+}
+
+.container {
+  box-shadow: 0 0 3px 1px rgba(221, 221, 221, 1);
+  background-color: $c-gray-light;
+  flex-direction: column;
+  margin-right: 15px;
+  border-radius: 3px;
+  margin-left: 15px;
+  padding: 20px;
+  display: flex;
+}
+
+.container:hover {
+  background-color: $c-white;
+}
+
+.title {
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 45px;
+  font-size: $fs-1;
+}
+
+.text {
+  text-align: center;
+  margin-top: 25px;
+  font-size: $fs-2;
+  font-weight: 800;
+  color: $c-black;
+}

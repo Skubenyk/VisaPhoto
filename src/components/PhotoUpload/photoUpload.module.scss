@@ -1,0 +1,23 @@
+//!PhotoUpload
+
+@import '../../styles/normolize.scss';
+@import '../../styles/normolize.scss';
+@import '../../styles/fonts.scss';
+@import '../../styles/variables.scss';
+@import '../../styles/main.scss';
+
+.uploadButtonWrapper {
+  button {
+    min-width: 260px;
+    max-height: 60px;
+    padding: 15px;
+  }
+
+  input {
+    display: none;
+  }
+
+  .a {
+    color: $c-white;
+  }
+}

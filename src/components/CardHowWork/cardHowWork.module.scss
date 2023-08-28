@@ -1,0 +1,29 @@
+//!Card how work
+
+@import './../../styles/normolize.scss';
+@import './../../styles/fonts.scss';
+@import './../../styles/variables.scss';
+@import './../../styles/main.scss';
+
+.cardHowWork {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+}
+
+.titleText {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 16px;
+  margin-top: 16px;
+  font-size: $fs-3;
+}
+
+.text {
+  line-height: 23px;
+  min-height: 71px;
+}

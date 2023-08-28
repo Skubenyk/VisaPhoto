@@ -1,0 +1,45 @@
+//!How work
+
+@import './../../styles/normolize.scss';
+@import './../../styles/fonts.scss';
+@import './../../styles/variables.scss';
+@import './../../styles/main.scss';
+
+.howWork {
+  margin-bottom: 80px;
+  button {
+    min-width: 260px;
+    padding: 20px;
+  }
+}
+
+.wrapper {
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px;
+  width: 1200px;
+  height: 100%;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: $fs-1;
+}
+
+.text {
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 35px;
+  font-size: $fs-2;
+}
+
+.wrapperCard {
+  display: flex;
+}
+
+.button {
+  justify-content: center;
+  margin-top: 50px;
+  display: flex;
+}

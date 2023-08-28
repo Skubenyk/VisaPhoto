@@ -6,18 +6,22 @@
   padding: 0;
   margin: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
-  background-color: $c-white;
+  background-color: $c-gray-light;
   font-family: $f-base;
+  padding-bottom: 150px;
   font-size: $fs-base;
   position: relative;
-  padding-top: 120px;
+  padding-top: 150px;
   line-height: 15px;
-  color: $c-brown;
+  color: $c-black;
 }
+
 .icon {
   display: inline-block;
   stroke: currentColor;
@@ -26,12 +30,16 @@ body {
   height: 1em;
   width: 1em;
 }
+
 a {
   text-decoration: none;
+  color: $c-white;
 }
+
 input:focus {
-  background-color: $c-bg-spec;
+  background-color: $c-white;
 }
+
 textarea:focus {
-  background-color: $c-bg-spec;
+  background-color: $c-white;
 }

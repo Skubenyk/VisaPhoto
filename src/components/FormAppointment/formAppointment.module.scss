@@ -1,0 +1,159 @@
+//*FormAppointment
+@import './../../styles/normolize.scss';
+@import './../../styles/fonts.scss';
+@import './../../styles/variables.scss';
+@import './../../styles/main.scss';
+
+//*Form appointment
+
+// Not visible modal window
+.modal {
+  background-color: rgba(204, 204, 190, 0.5);
+  pointer-events: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+// Visible modal window
+.modal.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+//*Form
+.form {
+  box-shadow: 0 0 3px 1px rgba(221, 221, 221, 1);
+  transform: translate(-50%, -50%);
+  background-color: $c-white;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  position: absolute;
+  width: fit-content;
+  display: flex;
+  left: 50%;
+  top: 50%;
+
+  input,
+  textarea {
+    box-shadow: 0 0 3px 1px rgba(221, 221, 221, 1);
+    background-color: $c-gray-light;
+    border: 2px solid $c-white;
+    border-radius: 3px;
+    padding: 7px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      padding: 6px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 5px;
+    }
+  }
+}
+.tel,
+.formContentText {
+  margin-top: 12px;
+  // Media
+  @media screen and (max-width: 1024px) {
+    margin-top: 10px;
+  }
+}
+.formWrapper {
+  height: fit-content;
+  width: 380px;
+  // Media
+  @media screen and (max-width: 1024px) {
+    width: 360px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 260px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 220px;
+  }
+}
+
+//*Title
+.titleForm {
+  margin-bottom: 30px;
+  line-height: 10px;
+  font-size: 30px;
+  color: $c-black;
+  // Media
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 20px;
+    line-height: 10px;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 15px;
+  }
+}
+.conntainerForm {
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+  // Media
+  @media screen and (max-width: 768px) {
+    padding: 15px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 13px;
+  }
+}
+.formContent {
+  flex-direction: column;
+  display: flex;
+}
+.formContentText {
+  overflow: auto;
+  // Media
+  @media screen and (max-width: 768px) {
+    height: 70px;
+  }
+}
+.formButton {
+  flex-direction: column;
+  display: flex;
+}
+.buttonSubmit {
+  background-color: $c-orange;
+  transform: translate(-50%, 0);
+  border-radius: 2px;
+  width: fit-content;
+  position: relative;
+  font-weight: 700;
+  margin-top: 12px;
+  color: $c-white;
+  cursor: pointer;
+  padding: 0 7px;
+  border: none;
+  height: 26px;
+  left: 50%;
+  // Media
+  @media screen and (max-width: 1024px) {
+    margin-top: 10px;
+    padding: 6px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 5px;
+    height: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 4px;
+    height: 17px;
+  }
+}
+.error {
+  margin-left: 10px;
+  margin-top: 5px;
+  color: $c-red;
+}

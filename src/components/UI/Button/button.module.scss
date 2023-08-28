@@ -1,0 +1,16 @@
+//!Button
+
+@import './../../../styles/normolize.scss';
+@import './../../../styles/fonts.scss';
+@import './../../../styles/variables.scss';
+@import './../../../styles/main.scss';
+
+.btn {
+  background-color: $c-red;
+  border-radius: 3px;
+  width: fit-content;
+  font-weight: 700;
+  font-size: $fs-4;
+  cursor: pointer;
+  border: none;
+}
