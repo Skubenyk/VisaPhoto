@@ -6,7 +6,7 @@
 @import './../../styles/main.scss';
 
 .home {
-  justify-content: center;
+  justify-items: center;
   display: flex;
 
   button {
@@ -16,6 +16,7 @@
 
 .wrapper {
   justify-content: space-between;
+  margin: 0 auto;
   padding: 30px;
   display: flex;
   width: 1200px;

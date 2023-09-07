@@ -46,7 +46,8 @@ const PhotoUpload = ({ route, url, textButton }) => {
       >
         {loading ? (
           <span>
-            <Preloader /> Wait...
+            <Preloader />{' '}
+            <span className={styles.buttonTextLoader}>Wait...</span>
           </span>
         ) : (
           <span className={styles.a}>{textButton}</span>

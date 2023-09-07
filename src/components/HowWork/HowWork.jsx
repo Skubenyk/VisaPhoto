@@ -57,8 +57,8 @@ const HowWork = ({ button }) => {
             textCard={'You can download a digital version.'}
           />
         </div>
+        <div className={styles.button}>{button}</div>
       </div>
-      <div className={styles.button}>{button}</div>
     </section>
   );
 };

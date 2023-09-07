@@ -13,36 +13,36 @@ import VisaChoice from '../components/VisaChoice/VisaChoice';
 
 const HomePage = () => {
   return (
-    <div className='HomePage'>
+    <div>
       <Home
         title={'Visa Photo Online for only $7'}
         text={'Get your perfect biometric photo (compliance guaranteed)'}
         button={
-          <Button>
-            <a href='#document'>CHOOSE DOCUMENT</a>
-          </Button>
+          <a href='#document'>
+            <Button>CHOOSE DOCUMENT</Button>
+          </a>
         }
       />
       <HowWork
         button={
-          <Button>
-            <a href='#document'>CHOOSE DOCUMENT</a>
-          </Button>
+          <a href='#document'>
+            <Button>CHOOSE DOCUMENT</Button>
+          </a>
         }
       />
       <HowMakePhoto
         button={
-          <Button>
-            <a href='#document'>CHOOSE DOCUMENT</a>
-          </Button>
+          <a href='#document'>
+            <Button>CHOOSE DOCUMENT</Button>
+          </a>
         }
       />
       <VisaChoice />
       <Footer
         button={
-          <Button>
-            <a href='#document'>CHOOSE DOCUMENT</a>
-          </Button>
+          <a href='#document'>
+            <Button>CHOOSE DOCUMENT</Button>
+          </a>
         }
       />
     </div>

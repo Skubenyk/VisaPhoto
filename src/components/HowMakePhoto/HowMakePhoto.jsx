@@ -18,8 +18,8 @@ const HowMakePhoto = ({ button }) => {
           src={passportPhotoRequirements}
           alt={'passportPhotoRequirements'}
         />
+        <div className={styles.button}>{button}</div>
       </div>
-      <div className={styles.button}>{button}</div>
     </section>
   );
 };
