@@ -11,7 +11,7 @@ import Preloader from '../UI/Preloader/Preloader';
 //*Import styles
 import styles from './photoUpload.module.scss';
 
-const PhotoUpload = ({ route, url, textButton }) => {
+const PhotoUpload = ({ route, url, textButton, photoData }) => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [loading, setLoading] = useState(false);
   const inputRef = useRef(null);
@@ -28,11 +28,19 @@ const PhotoUpload = ({ route, url, textButton }) => {
         setLoading(true); // Встановлюємо стан "завантаження"
         const response = await axios.post(url, formData);
         console.log('Photo uploaded successfully:', response.data);
+
+        // Передайте дані до компонента Photo
+        photoData({
+          visaPhoto: response.data.visaPhoto, // Припустимо, що відповідь містить поле visaPhoto
+          visaPhotoCheсk: response.data.visaPhotoCheсk, // Припустимо, що відповідь містить поле visaPhotoCheсk
+        });
+
         // Додайте обробку відповіді від бекенду тут
         setLoading(false); // Відмічаємо завершення завантаження
         window.location.href = { route }; // Перенаправлення після успішного завантаження
       } catch (error) {
-        console.error('Error uploading photo:', error);
+        window.location.href = '/';
+        alert('Error uploading photo!', error);
         setLoading(false); // Відмічаємо завершення завантаження (навіть якщо виникла помилка)
       }
     }
@@ -46,7 +54,7 @@ const PhotoUpload = ({ route, url, textButton }) => {
       >
         {loading ? (
           <span>
-            <Preloader />{' '}
+            <Preloader />
             <span className={styles.buttonTextLoader}>Wait...</span>
           </span>
         ) : (

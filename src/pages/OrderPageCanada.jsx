@@ -1,7 +1,7 @@
 //!OrderPageCanada
 
 //*Import base
-import React from 'react';
+import React, { useState } from 'react';
 
 //*Import components
 import Photo from '../components/Photo/Photo';
@@ -10,9 +10,20 @@ import Footer from '../components/Footer/Footer';
 import PhotoUpload from '../components/PhotoUpload/PhotoUpload';
 
 const OrderPageCanada = () => {
+  const [photoData, setPhotoData] = useState({});
   return (
     <div className='OrderPage'>
-      <Photo />
+      <Photo
+        button={
+          <PhotoUpload
+            textButton={'RETAKE PHOTO'}
+            route={'/homePageCanada/orderCanada'}
+            url={'/api/upload/canada'}
+            photoData={setPhotoData} // Передаємо функцію для оновлення photoData
+          />
+        }
+        photoData={photoData} // Передаємо photoData в Photo
+      />
       <Payment />
       <Footer
         button={

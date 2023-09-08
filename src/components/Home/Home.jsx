@@ -3,8 +3,6 @@
 //*Import base
 import React from 'react';
 
-//*Import components
-
 //*Import images
 import home from '../../assets/image/home.png';
 
