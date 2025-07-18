@@ -14,8 +14,7 @@
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "yup": "^1.2.0",
-    "@babel/plugin-proposal-private-property-in-object": "7.21.11"
+    "yup": "^0.32.11",
   },
    "engines": {
     "node": "20.x"
